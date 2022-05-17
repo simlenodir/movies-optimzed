@@ -1,0 +1,39 @@
+ 
+    .visully-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+
+}
+
+p {
+    height: 120px;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  .iframe {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+
+.wrapp:hover > .iframe {
+    display: block;
+    position: relative;
+}
+.js-wrapp{
+    margin-top: 50px;
+    height:300px;
+    overflow-y: scroll;
+}
+.wrapp:hover>.poster {
+    display: none;
+}
